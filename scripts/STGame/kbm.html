@@ -1,0 +1,231 @@
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Kobayashi Maru 1.0
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body bgcolor="#D5D5D5">
+        <canvas id="cvs_1" class="canvas-wrapper" width="720" height="400">Update your crap!</canvas>
+        <img src="images/asteroid.png" id="asteroid" class="assets">
+        <img src="images/EnterpriseSm.png" id="ship1" class="assets">
+        <img src="images/EnterpriseSmShield.png" id="ship1s" class="assets">
+        <img src="images/EnterpriseSmDamage.png" id="ship1d" class="assets">
+        <img src="images/Klingon_decloak.gif" id="decloak" class="assets">
+        <img src="images/Klingon_TAS.gif" id="klingon" class="assets">
+        <img src="images/KlingonDamage.gif" id="klingonD" class="assets">
+        <img src="images/KlingonShields.gif" id="klingonS" class="assets">
+        <audio src="sounds/torpedo.ogg" id="torpedoSound"></audio>
+        <audio src="sounds/shipphaser2.wav" id="phaser"></audio>
+        <audio src="sounds/torpedo.mp3" id="klingonTorp"></audio>
+        <audio src="sounds/shieldraise.wav" id="shieldup"></audio>
+        <audio src="sounds/shieldbreak.wav" id="shieldhit"></audio>
+        <audio src="sounds/decloak.mp3" id="decloaks"></audio>
+        <audio src="sounds/hullhit.mp3" id="hullhit"></audio>
+        <audio src="sounds/st2end.WAV" id="battle" loop></audio>
+        <audio src="sounds/StarTrekTheMotionPicture.WAV" id="cruising" loop></audio>
+        <script src="js/kbm_init.js"></script>
+        <script src="js/drawable_surface.js"></script>
+        <script src="js/stars.js"></script>
+        <script src="js/globals.js"></script>
+        <script src="js/alien.js"></script>
+        <script src="js/level.js"></script>
+        <script src="js/player.js"></script>
+        <script src="js/kbm.js"></script>
+        <div class="controls" style="padding-left: 15px ! important;">
+            <table class="no-spacing" border="0" cellspacing="0">
+                <tr class="border_bottom">
+                    <td>
+                        <center>
+                            <div style="border-top-left-radius: 7px;" 
+                            class="control-button"
+                            onmousedown="ship_object.move(68)" 
+                            onmouseup="ship_object.stop()"
+                            onmouseout="ship_object.stop()">
+                                Forward
+                            </div>
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            <div class="control-button"
+                            onmousedown="ship_object.move(83)"
+                            onmouseup="ship_object.stop()"
+                            onmouseout="ship_object.stop()">
+                                Down
+                            </div>
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            <div class="control-button"
+                            onmousedown="ship_object.move(65)"
+                            onmouseup="ship_object.stop()"
+                            onmouseout="ship_object.stop()">
+                                Back
+                            </div>
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            <div class="control-button"
+                            onmousedown="ship_object.move(87)"
+                            onmouseup="ship_object.stop()"
+                            onmouseout="ship_object.stop()">
+                                Up
+                            </div>
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            <div class="control-button"
+                            onmousedown="ship_object.move(85)"
+                            onmouseup="ship_object.stop()"
+                            onmouseout="ship_object.stop()">
+                                Faster
+                            </div>
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            <div class="control-button"
+                            onmousedown="ship_object.move(73)"
+                            onmouseup="ship_object.stop()"
+                            onmouseout="ship_object.stop()">
+                                Slower
+                            </div>
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            <div class="gage">
+                                Speed:
+                                <b id="speedometer">4</b>
+                            </div>
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            <div class="gage">
+                                Torps:
+                                <b id="torpedoInd">10</b>
+                            </div>
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            <div style="border-top-right-radius: 7px;" class="gage">
+                                Phsr:
+                                <b id="phaserInd">100</b>
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="6">
+                        <div class="manual">
+                            <b>
+                                KEY CONTROLS
+                            </b>
+                            <BR>
+                            D-PAD: a,w,s,d 
+                            <BR>
+                            SPEED: u,i 
+                            <BR>
+                            TORPEDOES: j 
+                            <BR>
+                            PHASERS: k 
+                            <BR>
+                            SHIELDS: l 
+                            <BR>
+                            PAUSE: space
+                        </div>
+                    </td>
+                    <td>
+                        <center>
+                            <div class="control-button"
+                            onmousedown="ship_object.move(75)"
+                            onmouseup="ship_object.stop()"
+                            onmouseout="ship_object.stop()">
+                                Phasers
+                            </div>
+                        </center>
+                    </td>
+                    <td colspan="6" rowspan="6">
+                        <div id="sensor-display" class="sensor">
+                            Welcome to "Kobayashi Maru" a Star Trek fan game!<br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <div class="control-button"
+                            onmousedown="ship_object.move(74)"
+                            onmouseup="ship_object.stop()"
+                            onmouseout="ship_object.stop()">
+                                Torpedo
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <div class="control-button"
+                            onmousedown="ship_object.shieldsUp_Dn()">
+                                Shields
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <div id="shldIndBG" class="gage">
+                                Shld:
+                                <b id="shldInd">100</b>
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <div class="gage">
+                                Hull:
+                                <b id="hullInd">100</b>
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <div class="control-button"
+                            onmousedown="drawable_surface.pause_game()">
+                                Pause
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

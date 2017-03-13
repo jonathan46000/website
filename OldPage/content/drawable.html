@@ -1,0 +1,24 @@
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <link rel="stylesheet" href="drawable.css">
+    <body onload="init_app()" bgcolor="#D5F38F">
+        <script src="drawable.js">
+        </script><br><br>
+        <button type="button" style="background-color: red; color: red;" onclick="brush_object.set_brush_color('red')">RED</button>
+        <button type="button" style="background-color: blue; color: blue;" onclick="brush_object.set_brush_color('blue')">RED</button>
+        <button type="button" style="background-color: green; color: green;" onclick="brush_object.set_brush_color('green')">RED</button>
+        <button type="button" style="background-color: yellow; color: yellow;" onclick="brush_object.set_brush_color('yellow')">RED</button>
+        <button type="button" style="background-color: orange; color: orange;" onclick="brush_object.set_brush_color('orange')">RED</button>
+        <button type="button" style="background-color: magenta; color: magenta;" onclick="brush_object.set_brush_color('magenta')">RED</button>
+        <button type="button" style="background-color: black; color: black;" onclick="brush_object.set_brush_color('black')">RED</button>
+        <button type="button" style="background-color: white; color: white;" onclick="brush_object.set_brush_color('white')">RED</button>
+        <button type="button" class="ctrl" onclick="brush_object.brush_size_up()">Brush &#8679</button>
+        <button type="button" class="ctrl" onclick="brush_object.brush_size_dn()">Brush &#8681</button>
+        <button type="button" class="ctrl" onclick="brush_object.set_brush_type('rectangle')">Square</button>
+        <button type="button" class="ctrl" onclick="brush_object.set_brush_type('circle')">Circle</button>
+        <button type="button" class="ctrl" onclick="drawable_surface.clear()">Clear</button>
+    </body>
+</html>

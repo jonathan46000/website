@@ -6,10 +6,9 @@
 
 int main(int argc, char *argv[])
 {
-    //Main application creates and shows MainWindow
     QApplication app(argc, argv);
-    MainWindow *mainwindow = new MainWindow;//This is the new instance of your MainWindow class
-    mainwindow->show();//This is an inherited function from QMainWindow that shows the main window
+    MainWindow *mainwindow = new MainWindow;
+    mainwindow->show();
 
-    return app.exec();//This in an inherited function of QApplication that closes the application when maindow->show();
-}                      //completes
+    return app.exec();
+}

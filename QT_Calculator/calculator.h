@@ -10,7 +10,7 @@ class calculator : public QObject
 
     Q_OBJECT
 
-  public:
+private:
     QString tempStr;//this string will accept input from the interface as a string
     QString firstStr;//this string could be used for other stuff later
     int x;//class wide counter
@@ -18,7 +18,7 @@ class calculator : public QObject
     char operand;//variable to store operand
     double temp;//stores incoming numbers
     double first;//stores numbers stored prior to operand
-
+public:
     //PUBLIC FUNCTIONS
     calculator(QObject *parent = 0);//constructor
 

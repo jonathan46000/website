@@ -1,4 +1,4 @@
-#include <QtGui>
+#include <QtWidgets>
 #include <QString>
 #include <QFile>
 #include <QProcess>

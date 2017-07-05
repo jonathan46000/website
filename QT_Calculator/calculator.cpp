@@ -1,4 +1,4 @@
-#include <QtGui>
+#include <QtWidgets>
 #include <QFile>
 #include <QProcess>
 #include <iostream>
@@ -22,24 +22,12 @@ calculator::calculator(QObject *parent) ://constructor sets safe and default val
 
 void calculator::numberReceiver(char nextNumber)//recieves number and stores it in temp
 {
-    /*************************Clean up string*****************************/
-    int y;//used to count from end of numbers to end of string
-    int z;//used to find end of string
-    for(z=0;tempStr[z]!='\0';z++)//loop find string end
-
     //place number in next part of array and
     if (tempStr[0]=='0')//places input in first place if first place is zero
         x=0;
     /*********************************************************************/
 
     tempStr[x] = nextNumber;//if operand button or equal button has not been pressed then everynew button pressed will store the digit in the next character in the array
-
-    /*************************Clean up string*****************************/
-    for(y = x+1;y<z;y++)//sets nulls for every character between end of number to end of string
-    {
-        tempStr[y]='\0';
-    }
-    /*********************************************************************/
 
     temp = tempStr.toDouble();//converts string to number
     emit toDisplay(tempStr);//sends number to display
@@ -90,7 +78,7 @@ void calculator::calculate()
     emit toDisplay(tempStr);//string sent to display
 
     int z;
-    for(z=0;tempStr[z]!='\0';z++)//resets string
+    for(z=0;tempStr[z]!='\0';z++)
     {
         tempStr='\0';
     }

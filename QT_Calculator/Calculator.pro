@@ -4,9 +4,10 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+#QT       += core gui
+QT += widgets
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+#greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = NewProject
 TEMPLATE = app
@@ -17,7 +18,7 @@ SOURCES += main.cpp\
     calculator.cpp
 
 HEADERS  += mainwindow.h \
-    ../CATLabIDWT-build-Desktop-Debug/ui_mainwindow.h \
+    ../build-Calculator-Desktop-Debug/ui_mainwindow.h \
     calculator.h
 
 FORMS    += mainwindow.ui

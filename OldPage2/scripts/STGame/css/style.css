@@ -1,0 +1,87 @@
+.control-button {
+    background-color: yellow; 
+    color: black; 
+    width: 75px; 
+    height: 20px; 
+    padding-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.gage {
+    background-color: blue; 
+    color: white; 
+    width: 75px; 
+    height: 20px; 
+    padding-bottom: 5px;
+    padding-top: 3px;
+    font-family: sans-serif;
+}
+
+.controls {
+    padding-left: 12px;
+    padding-top: 15px;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 705px;
+    height: 235px;
+    background-color: #222222;
+    font-family: sans-serif;
+}
+
+.manual {
+    background-color: red; 
+    color: black; 
+    width: 148px;
+    height: 172px;
+    margin-left: 0px;
+    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-left: 4px;
+    border-bottom-left-radius: 7px;
+    font-family: sans-serif;
+}
+
+.sensor {
+    background-color: black;
+    color: white;
+    width: 455px;
+    height: 172px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 3px;
+    border-bottom-right-radius: 7px;
+    font-family: sans-serif;
+}
+
+tr.border_bottom td {
+    border-bottom:5pt solid black;
+    font-family: sans-serif;
+}
+
+table.no-spacing {
+    border-spacing:0;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+.canvas-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 720px;    
+}
+
+.assets {
+    display: none;
+    visibility: hidden;
+}
+
+
+
+

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="jonathan46000 blog/notes">
+    <title>Jonathan46000 - Blog</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    
+    
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/blog.css">
+        <!--<![endif]-->
+</head>
+<body>
+
+
+
+ 
+
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Notes and Blog</h1>
+            <h2 class="brand-tagline">A collection of random thoughts and opinions</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="mailto:jonathan46000@yahoo.com">Email</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="mailto:nobody@doesntexist.net">Hate Mail</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+
+        <div class="pure-menu pure-menu-horizontal">
+            <a class="pure-menu-heading" href="index.html">Jonathan46000.com</a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-selected"><a href="home.html" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="projects.html" class="pure-menu-link">Projects</a></li>
+                <li class="pure-menu-item"><a href="software.html" class="pure-menu-link">Software</a></li>
+		<li class="pure-menu-item"><a href="notes.html" class="pure-menu-link">Notes/Blog</a></li>
+		<li class="pure-menu-item"><a href="scripts.html" class="pure-menu-link">Scripts</a></li>
+		<li class="pure-menu-item"><a href="links.html" class="pure-menu-link">Links</a></li>
+		<li class="pure-menu-item"><a href="mailto:jonathan46000@yahoo.com" class="pure-menu-link">Contact</a></li>
+            </ul>
+        </div>
+    
+
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">Pinned Post</h1>
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="Jonathan46000" class="post-avatar" src="images/Jonathan46000.png">
+
+                        <h2 class="post-title">My blog and notes</h2>
+
+                        <p class="post-meta">
+                            January 3, 2018
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            This blog is disorganized collection of my random thoughts, travels, and opinions.  It may get updated
+			    infrequently or never.  These opinions change overtime and may no longer be relevant, however if I do 
+			    have a change of heart it will probably be expressed in a later post instead of the removal of one.  
+			    As with any of us, I have been known to be wrong from time to time. I apologize in advance.  If you are 
+			    unhappy with the contents of this blog I have a button for you on the left labeled "Hate Mail".  If you have
+			    legitimate questions, you can use the button labeled "Email".  
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="posts">
+                <h1 class="content-subhead">Everything Else</h1>
+
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="Jonathan46000" class="post-avatar" src="images/fire.jpg">
+
+                        <h2 class="post-title">The server caught fire! Long live the server!</h2>
+
+                        <p class="post-meta">
+                            October 22, 2017
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            The server caught fire in the PSU, and killed the hard drives along with it.  Luckily the motherboard survived and
+			    full backup has been restored to the new drives and a new PSU installed (As evidenced by the existence of the web page).
+			    The new power supply is of decidedly higher quality and is not likely to repeat the burnage event.    
+                        </p>
+                    </div>
+                </section>
+
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="Jonathan46000" class="post-avatar" src="images/flag.jpg">
+
+                        <h2 class="post-title">Iceland, RVASec, LUG</h2>
+
+                        <p class="post-meta">
+                            July 4, 2017
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+			Many things have happened since the last time I blogged on here. I have visited iceland, attended RVASec 2017 as a developer for the RVASec badges, started a new software project and have become the president of the Linux Users Group at the college I attend. First of all, Iceland is a beautiful country and if you ever have the chance you should go there. Similarly RVASec 2017 was a blast and the HackRVA badges were a hit once again. Two of my apps made it into the badge this year. You can find the source code for the entire badge at https://github.com/HackRVA/Harmony-Badge-2017-public and the code to my drawing app for the badge at https://github.com/HackRVA/Harmony-Badge-2017-public/blob/master/firmware/src/badge_apps/udraw.c.
+
+I recently started making a simple GUI for wget in Qt. It's not ridiculously robust but it's very simple and provides a couple of nice features that make it convenient for me to use with blackboard. You can find the code for this at https://github.com/jonathan46000/crude-wget-gui.
+
+Running a Linux Users Group has tought me a lot. I have never claimed to be an expert at Linux(most linux users would never dare claim to be an expert). I am surprised however at how much you can learn by helping others. This has been a very fulfilling experience for me.
+
+Now last, but not least, Happy Independence Day!
+
+                        <div class="post-images pure-g">
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                <a href="iceland.html">
+                                    <img alt="Skogafoss Falls, Iceland"
+                                         class="pure-img-responsive"
+                                         src="images/iceland/falls2.JPG">
+                                </a>
+
+                                <div class="post-image-meta">
+                                    <h3>Skogafoss falls, Iceland</h3>
+                                </div>
+                            </div>
+
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                <a href="https://rvasec.com">
+                                    <img alt="RVA Security Conference"
+                                         class="pure-img-responsive"
+                                         src="images/rvasec.png">
+                                </a>
+
+                                <div class="post-image-meta">
+                                    <h3>RVA Security Conference</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <li class="pure-menu-item"><a href="https://www.facebook.com/jonathan46000" class="pure-menu-link">Facebook</a></li>
+                        <li class="pure-menu-item"><a href="https://twitter.com/jonathan46000" class="pure-menu-link">Twitter</a></li>
+                        <li class="pure-menu-item"><a href="https://github.com/jonathan46000" class="pure-menu-link">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

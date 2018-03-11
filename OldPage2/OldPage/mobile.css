@@ -1,0 +1,131 @@
+
+a {
+  color: #FFFFFF;
+}
+
+.body {
+  background-color: #FFFFFF;
+}
+
+.title {
+  text-align: center;
+  text-shadow: 0em 0em 0.03em white;
+  color: white;
+  font: arial;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.top-stripe {
+  background-color: #232323;
+}
+
+.side-bar {
+  background-color: #ADADAD;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+}
+
+.content {
+  background-color #FFFFFF;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.content p {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #000000;
+  width: 800px;
+  word-wrap: break-word;
+  display: inline-block;
+  text-indent: 0px;
+  font-size: 40;
+}
+
+
+.content-bg {
+  position: absolute;
+  left: 0;
+  top 0;
+  width: auto;
+  height: 100%;
+  opacity: 0.1;
+}
+
+.pane {
+  color: white;
+  background-image: url('http://jonathan46000.com/images/ImageGallery/Inviting_field.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 85%;
+  background-color: #237FFF;
+  font-size: 35px;
+}
+
+.pain1 {
+  color: white;
+  background-image: url('http://jonathan46000.com/images/ImageGallery/beautiful_canyon.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 85%;
+  background-color: #237FFF;
+}
+
+.pain2 {
+  color: white;
+  background-image: url('http://jonathan46000.com/images/ImageGallery/netswitch.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 85%;
+  background-color: #237FFF;
+}
+
+.pain3 {
+  color: white;
+  background-image: url('http://jonathan46000.com/images/ImageGallery/Network2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 85%;
+  background-color: #237FFF;
+}
+
+.largeText {
+  color: white;
+  text-shadow: 0em 0em .3em black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.smallText {
+  color: white;
+  text-shadow: 0em 0em .3em black;
+  font-size: 20px;
+  word-wrap: break-word;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.thumbnail {  
+  width: 900px;
+  height: 480px;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform:  scale(0.3, 0.3);
+  -moz-transform:  scale(0.3, 0.3);
+  transform:  scale(0.3, 0.3);
+  overflow: hidden;
+  margin-left: 20%;
+}
+
+.row-bottom-margin { 
+  padding-bottom: 0px; 
+}
